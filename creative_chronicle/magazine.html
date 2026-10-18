@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CreativeChronicle - Art Magazine</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="border-bottom bg-white">
+        <nav class="container navbar navbar-expand-lg">
+            <a class="navbar-brand fw-bold" href="#">CreativeChronicle</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false"
+                aria-label="Mở menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#story">Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recommended">Recommended</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5" id="story">
+        <article>
+            <div class="article-heading mb-4">
+                <p class="text-uppercase text-secondary small fw-semibold mb-2">
+                    Art &amp; Culture
+                </p>
+                <h1 class="display-5 fw-bold">
+                    Finding Beauty in Everyday Life
+                </h1>
+                <p class="lead text-secondary">
+                    Khám phá cách nghệ thuật biến những điều bình dị
+                    thành nguồn cảm hứng sáng tạo.
+                </p>
+            </div>
+
+            <!-- Author Info: Flexbox -->
+            <section class="author-section d-flex align-items-center
+                justify-content-between flex-wrap gap-3 mb-4 pb-3 border-bottom">
+
+                <div class="author-profile d-flex align-items-center gap-3">
+                    <div class="author-avatar" aria-hidden="true">JD</div>
+
+                    <div class="author-details">
+                        <h2 class="h6 fw-bold mb-1">Jane Doe</h2>
+                        <p class="small text-secondary mb-0">
+                            Published on Oct 25, 2026
+                        </p>
+                    </div>
+                </div>
+
+                <div class="share-buttons d-flex flex-wrap align-items-center gap-2">
+                    <button class="btn btn-outline-primary btn-sm" type="button">
+                        Share Facebook
+                    </button>
+                    <button class="btn btn-outline-dark btn-sm" type="button">
+                        Tweet
+                    </button>
+                </div>
+            </section>
+
+            <!-- Mosaic Gallery: CSS Grid -->
+            <section id="gallery" class="mosaic-gallery mb-5"
+                aria-label="Thư viện ảnh nghệ thuật">
+
+                <div class="photo photo-main">
+                    <span>Main Photo</span>
+                </div>
+
+                <div class="photo photo-sub-1">
+                    <span>Sub Photo 1</span>
+                </div>
+
+                <div class="photo photo-sub-2">
+                    <span>Sub Photo 2</span>
+                </div>
+            </section>
+
+            <section class="article-content mb-5">
+                <h2 class="h3 fw-bold mb-3">Art in the Details</h2>
+
+                <p>
+                    Nghệ thuật không chỉ tồn tại trong bảo tàng hay những
+                    phòng triển lãm lớn. Đôi khi, cảm hứng đến từ ánh sáng
+                    trên cửa sổ, màu sắc của một con phố hoặc những vật dụng
+                    quen thuộc trong cuộc sống.
+                </p>
+
+                <p>
+                    Bằng cách quan sát thế giới xung quanh, chúng ta có thể
+                    khám phá những góc nhìn mới và tìm thấy vẻ đẹp trong
+                    những khoảnh khắc giản dị mỗi ngày.
+                </p>
+            </section>
+        </article>
+
+        <!-- Recommended Articles: Bootstrap Grid -->
+        <section id="recommended" class="recommended-section">
+            <div class="d-flex justify-content-between align-items-center
+                flex-wrap gap-2 mb-4">
+                <h2 class="h3 fw-bold mb-0">Recommended Articles</h2>
+                <a href="#recommended" class="link-primary">View all</a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card article-card h-100">
+                        <div class="card-art art-one">
+                            <span>01</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="small text-secondary mb-2">ART</p>
+                            <h3 class="h5 card-title">The Colors of Modern Art</h3>
+                            <p class="card-text">
+                                Tìm hiểu sức mạnh của màu sắc trong nghệ thuật.
+                            </p>
+                            <a href="#story" class="btn btn-outline-dark btn-sm">
+                                Read more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card article-card h-100">
+                        <div class="card-art art-two">
+                            <span>02</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="small text-secondary mb-2">DESIGN</p>
+                            <h3 class="h5 card-title">A Guide to Minimalism</h3>
+                            <p class="card-text">
+                                Vẻ đẹp của sự tối giản trong thiết kế hiện đại.
+                            </p>
+                            <a href="#story" class="btn btn-outline-dark btn-sm">
+                                Read more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card article-card h-100">
+                        <div class="card-art art-three">
+                            <span>03</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="small text-secondary mb-2">PHOTOGRAPHY</p>
+                            <h3 class="h5 card-title">Stories Through a Lens</h3>
+                            <p class="card-text">
+                                Kể chuyện bằng góc nhìn và ánh sáng.
+                            </p>
+                            <a href="#story" class="btn btn-outline-dark btn-sm">
+                                Read more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="card article-card h-100">
+                        <div class="card-art art-four">
+                            <span>04</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="small text-secondary mb-2">CULTURE</p>
+                            <h3 class="h5 card-title">Creative Spaces</h3>
+                            <p class="card-text">
+                                Những không gian nuôi dưỡng trí tưởng tượng.
+                            </p>
+                            <a href="#story" class="btn btn-outline-dark btn-sm">
+                                Read more
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="fw-bold mb-1">CreativeChronicle</p>
+            <p class="small mb-0">Art, ideas and inspiration for everyone.</p>
+        </div>
+    </footer>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
